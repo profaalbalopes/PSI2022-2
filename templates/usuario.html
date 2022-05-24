@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Contato
+    </title>
+    <link href="{{ url_for('static', filename='css/estilo.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Primeira forma de inserir imagem -->
+    <img src="/static/img/perfil.jpg">
+
+     <!-- Segunda forma de inserir imagem -->
+    <img src="{{ url_for('static', filename='img/perfil.jpg')}}">
+    
+    <p>
+      Nome: {{ nome }}<br>
+      Email: {{ email }}
+    </p>
+  </body>
+</html>
