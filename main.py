@@ -26,5 +26,11 @@ def soma(op1, op2):
 @app.route('/galeria/<id>')
 def galeria(id):
   return render_template('galeria.html', id=id)
-  
+
+
+@app.route('/novagaleria/<id>')
+def novagaleria(id):
+  return render_template('galeria.html', id=id)
+
+
 app.run(host='0.0.0.0', port=81)
